@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My simple calculator</title>
+    <style>
+        #center{
+            width: 400px;
+            height: 370px;
+            border: 2px solid black;
+            /* color: aqua; */
+        }
+        input{
+            /* color: rgb(); */
+            border-color: crimson;
+            
+        }
+        #button1{
+            border: 2px solid black;
+        }
+        #button2{
+            border: 2px solid black;
+        }
+        #button3{
+            border: 2px solid black;
+        }
+        #button4{
+            border: 2px solid black;
+        }
+        #answer1{
+            width: 170px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <center  >
+    <div id="center" align="center" style="background-color: lightgreen;">
+    <h1 style="color: black;">My simple calculator</h1>
+    <h3 style="color: crimson;">Enter first number</h3>
+    <input type="number" id="value1">
+    <h3 style="color: crimson;">Enter second number</h3>
+    <input type="number" id="value2">
+    <!-- <h3>Addition</h3> -->
+    <p id="answer1" style="color: darkred;">Here you can see Answers</p>
+    <button id="button1" onclick="add()" style="color: green;">Add(+)</button>
+    <button id="button2" onclick="sub()" style="color: red;">Sub(-)</button>
+    <button id="button3" onclick="div()" style="color: blue;">Div(/)</button>
+    <button id="button4" onclick="mul()" style="color: darkmagenta;">Mul(*)</button>
+    <!-- <button id="button5" onclick="mod()" style="color: green;">Mod(%)</button> -->
+
+    </div>
+</center>
+<script src="./script.js"></script>
+</body>
+</html>
